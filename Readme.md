@@ -2,6 +2,7 @@
 Easy to share your SNS
 ------------------------------
 #### version : 0.1.0
+#### preview : https://cistusf.github.io/My-SNS/
 
 > How to use?  
 
