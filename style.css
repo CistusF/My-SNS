@@ -24,6 +24,7 @@ body {
 .sns {
     cursor: pointer;
     padding: 20px;
+    margin: 10px;
     border-radius: 30px;
     background-color: #444040;
     width: 200px;
@@ -40,6 +41,7 @@ body {
 
 @media (max-width: 600px) {
     .sns_list {
-        flex-direction: column;
+        justify-content: center;
+        flex-direction:row;
     }
 }
