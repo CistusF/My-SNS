@@ -19,6 +19,7 @@
 
 // Settings section
 const username = "CistusF";
+const profileSrc = "./profile.jpeg"; // image url is allowed
 const SNS_List = [
     {
         link: "https://instagram.com/cistusf",
@@ -58,9 +59,11 @@ description.content = `View ${username}'s SNS List!`;
     document.getElementsByTagName('head')[0].appendChild(item);
 });
 
-// Get Elements
-const nameEle = document.querySelector(".title");
+// Get, Set, Create Elements
+const nameEle = document.createElement("h1");
 const snsListDiv = document.querySelector(".sns_list");
+const header = document.querySelector('.header');
+const profile = document.createElement('img');
 
 /**
  * Load icon datas 
@@ -77,7 +80,16 @@ const icons = {
     tiktok: ["0 0 448 512", "M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"]
 };
 
+// setting elements data
 nameEle.innerText = `${username}'s SNS Links`;
+nameEle.className = 'title';
+profile.src = profileSrc;
+profile.className = 'profile';
+
+// append elements data
+header.appendChild(profile);
+header.appendChild(nameEle);
+
 SNS_List.forEach(({ link, type, alt }) => {
     // Create sns div
     const snsDiv = document.createElement('div');
@@ -85,7 +97,6 @@ SNS_List.forEach(({ link, type, alt }) => {
     const path = document.createElementNS("http://www.w3.org/2000/svg", 'path');;
     const altText = document.createElement('h3');
     const iconInfo = icons[type];
-
 
     snsDiv.className = "sns";
     snsDiv.onclick = () => {
@@ -100,7 +111,7 @@ SNS_List.forEach(({ link, type, alt }) => {
 
     altText.innerText = alt ?? type.toUpperCase();
 
-    // pack sns div
+    // Pack sns div
     icon.appendChild(path);
     snsDiv.appendChild(icon);
     snsDiv.appendChild(altText);
