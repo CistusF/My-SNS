@@ -52,9 +52,8 @@ const SNS_List = [
 document.documentElement.className = theme;
 
 // Edit Meta datas
-const title = document.querySelector("title");
-title.innerText = `${username}'s SNS`;
-document.querySelector('meta[name="description"]').setAttribute("content", `View ${username}'s SNS List!`);
+document.querySelector('meta[name="description"]').setAttribute("content", `View ${username}'s SNS!`);
+document.querySelector('meta[property="og:description"]').setAttribute("content", `View ${username}'s SNS!`);
 
 // Get, Set, Create Elements
 const nameEle = document.createElement("h1");
