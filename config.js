@@ -1,6 +1,6 @@
-var username = "CistusF";
-var theme = "dev";
-var profileSrc = "./profile.jpeg"; // image url is allowed
+var username = "Your name";
+var theme = "light";
+var profileSrc = "./userProfile.jpeg";
 var SNS_List = [
     {
         link: "https://instagram.com/cistusf",

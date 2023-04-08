@@ -1,11 +1,9 @@
+<img width="50" src="./.gitImg/icon.png" alt="icon" align="center" />  
 # My SNS
+<br/>
 Easy to share your SNS
 ------------------------------
-<<<<<<< HEAD
-#### version : 0.1.0
-=======
-#### version : 0.2.0
->>>>>>> parent of 046a3ba (Edit Readme.md)
+#### version : 0.2.2
 #### preview : https://cistusf.github.io/My-SNS/
 
 > How to use?  
@@ -14,6 +12,13 @@ edit `config.js`'s configuration
 
 ```typescript
 const username = "Your name"; // Enter your name or nickname
+const theme = "light"; // Enter theme name you want to use.
+const profileSrc = "./userProfile.png"; 
+/**
+ * image url is allowed
+ * if you want load your own profile image file from project.
+ * edit profileSrc to const profileSrc = "./Yourfile.fileType";
+*/
 const SNS_List = [
     {
         link: "https://instagram.com/cistusf",
@@ -31,6 +36,10 @@ interface SNS_List {
     type: SNS_ListType;
     alt?: string;
 }[]; // SNS List type
+
+interface ThemeList {
+    theme: string<"light","dark","blue","red","purple","dev">;
+} 
 ```
 And Enable GitHub Pages for main branch.
 
