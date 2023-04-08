@@ -1,10 +1,7 @@
-<img width="50" src="./.gitImg/icon.png" alt="icon" align="center" />  
-# My SNS
-<br/>
-Easy to share your SNS
-------------------------------
-#### version : 0.2.2
-#### preview : https://cistusf.github.io/My-SNS/
+<h1><img width="50" src="./icon.png" alt="icon" align="center" />My SNS</h1>
+<h3>Easy to share your SNS</h3>
+<h5>version : 0.2.2</h5>
+<h5>preview : <a href="https://cistusf.github.io/My-SNS/">My-SNS</a></h5>
 
 > How to use?  
 
