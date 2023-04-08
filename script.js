@@ -52,13 +52,9 @@ const SNS_List = [
 document.documentElement.className = theme;
 
 // Edit Meta datas
-const title = document.createElement("title");
+const title = document.querySelector("title");
 title.innerText = `${username}'s SNS`;
 document.querySelector('meta[name="description"]').setAttribute("content", `View ${username}'s SNS List!`);
-
-[title, description].forEach((item) => {
-    document.getElementsByTagName('head')[0].appendChild(item);
-});
 
 // Get, Set, Create Elements
 const nameEle = document.createElement("h1");
