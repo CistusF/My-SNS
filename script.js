@@ -19,6 +19,7 @@
 
 // Settings section
 const username = "CistusF";
+const theme = "dev";
 const profileSrc = "./profile.jpeg"; // image url is allowed
 const SNS_List = [
     {
@@ -46,6 +47,9 @@ const SNS_List = [
  * This section is not allowed for editing
  * (Editing is allowed when you want to update design.)
  */
+
+// Set theme
+document.documentElement.className = theme;
 
 // Add Meta datas
 const title = document.createElement("title");
