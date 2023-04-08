@@ -6,7 +6,7 @@ Easy to share your SNS
 
 > How to use?  
 
-edit `script.js`'s configuration
+edit `config.js`'s configuration
 
 ```typescript
 const username = "Your name"; // Enter your name or nickname
