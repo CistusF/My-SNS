@@ -1,7 +1,11 @@
 # My SNS
 Easy to share your SNS
 ------------------------------
+<<<<<<< HEAD
 #### version : 0.1.0
+=======
+#### version : 0.2.0
+>>>>>>> parent of 046a3ba (Edit Readme.md)
 #### preview : https://cistusf.github.io/My-SNS/
 
 > How to use?  
