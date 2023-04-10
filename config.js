@@ -5,19 +5,14 @@ var SNS_List = [
     {
         link: "https://instagram.com/cistusf",
         type: "instagram",
-        alt: "My public IG"
-    },
-    {
-        link: "https://instagram.com/v_cistus",
-        type: "instagram",
-        alt: "My private IG"
+        bio: "My public IG"
     },
     {
         link: "https://youtube.com/@cistusf",
         type: "youtube"
     },
     {
-        link: "https://steamcommunity.com/id/cistusgame",
-        type: "steam"
+        link: "https://cistusf.vercel.app",
+        bio: "My Portfolio"
     }
 ];
