@@ -1,11 +1,15 @@
-<h1><img width="50" src="./icon.png" alt="icon" align="center" />My SNS</h1>
-<h3>Easy to share your SNS</h3>
-<h5>version : 0.2.3</h5>
-<h5>preview : <a href="https://cistusf.github.io/My-SNS/">My-SNS</a></h5>
+<img width="50" src="./icon.png" alt="icon" align="center" />  
+<h1>My SNS</h1>
+<br/>
+  
+Easy to share your SNS  
+------------------------------
+#### version : 1.0.3
+#### preview : https://cistusf.github.io/My-SNS/
 
 > How to use?  
 
-edit `config.js`'s configuration
+edit `script.js`'s configuration
 
 ```typescript
 const username = "Your name"; // Enter your name or nickname
@@ -16,7 +20,7 @@ const profileSrc = "./userProfile.png";
  * if you want load your own profile image file from project.
  * edit profileSrc to const profileSrc = "./Yourfile.fileType";
 */
-var SNS_List = [
+const SNS_List = [
     {
         link: "https://instagram.com/cistusf",
         type: "instagram",
@@ -27,7 +31,7 @@ var SNS_List = [
         type: "youtube"
     },
     {
-        link: "https://cistusf.vercel.app",
+        link: "https://cistusf.vercel.app/",
         bio: "My Portfolio"
     }
 ]; // Add your SNS list
@@ -45,6 +49,8 @@ interface ThemeList {
 And Enable GitHub Pages for main branch.
 
 > Support SNS list
+###### `If the link is not supported, it will be replaced with a default icon.`
+<br>
 
 * Discord
 * GitHub
@@ -53,7 +59,7 @@ And Enable GitHub Pages for main branch.
 * Instagram
 * Twitter
 * Steam
-* Tik Tok
+* Tik Tok  
 
 > License
 
